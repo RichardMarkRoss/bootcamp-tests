@@ -1,9 +1,9 @@
 describe('The transportFee function', function(){
 
-    it('should check is the the time of day macthes amount', function(){
+    it('if the time of day is morning it should give the amount R20', function(){
         assert.equal(transportFee('morning'),'R20')
     });
-    it('should check is the the time of day macthes amount', function(){
+    it('if the the time of day is at night the it should display free', function(){
         assert.equal(transportFee('nightshift'), 'free')
     });
 });

@@ -1,6 +1,6 @@
 describe('The mostProfitableDepartment function', function(){
 
-    it('should show the most profitable department', function(){
+    it('should show the most profitable department over the caculated number of sales', function(){
       var salesData = [
     {department : 'hardware', sales : 4500, day : 'Monday'},
     {department : 'outdoor', sales : 1500, day : 'Monday'},
@@ -20,7 +20,7 @@ describe('The mostProfitableDepartment function', function(){
 ];
         assert.equal(mostProfitableDepartment(salesData),'outdoor')
     });
-    it('should show the most profitable department', function(){
+    it('array has been change and should display the correct department the had the highest calculated sales', function(){
       var salesData = [
     {department : 'hardware', sales : 18000, day : 'Monday'},
     {department : 'outdoor', sales : 1500, day : 'Monday'},
