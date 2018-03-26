@@ -1,4 +1,4 @@
-describe('regCheck', function(){
+describe('The regCheck function', function(){
 
   it('should check if vehicles ends with GP', function(){
     assert.equal(regCheck('123456 GP', 'GP'),true)
