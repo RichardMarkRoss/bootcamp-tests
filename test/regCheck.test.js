@@ -7,5 +7,7 @@ describe('regCheck', function(){
   it('should check if vehicles does not end with GP', function(){
     assert.equal(regCheck('987456 CY'),false)
   });
-
+  it('should display false if the string is left empty', function(){
+    assert.equal(regCheck(''),false)
+  });
 });
