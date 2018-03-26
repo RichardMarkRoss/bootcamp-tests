@@ -40,5 +40,7 @@ describe('The mostProfitableDepartment function', function(){
 ];
         assert.equal(mostProfitableDepartment(salesData),'hardware')
     });
-
+    it('array has been left empty and it should display an empty string', function(){
+        assert.equal(mostProfitableDepartment(''),' ')
+    });
 });
